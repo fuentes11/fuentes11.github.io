@@ -512,3 +512,55 @@ h3.pink-border-heading {
       width: 20%;
   }
 }
+
+@media screen and (max-width: 1284px) {
+  .slider-container {
+      height: calc(70vh - 4rem);
+  }
+  
+  .slider {
+      width: 300%;
+  }
+  
+  .slide img {
+      width: 60%;
+  }
+  
+  .message h2 {
+      font-size: 1.8rem;
+      padding: 8px 15px;
+  }
+  
+  .message p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+  }
+  
+  .pink-border-heading {
+      width: 50%;
+      font-size: 1.2rem;
+  }
+  
+  .carousel {
+      width: 80%;
+      padding-top: 50%;
+  }
+  
+  .carousel__slide {
+      flex: 0 0 80%;
+  }
+  
+  .carousel__navigation-button {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-width: 0.12rem;
+  }
+  
+  .additional-content h2 {
+      font-size: 1.4rem;
+  }
+  
+  .line {
+      width: 25%;
+  }
+}
