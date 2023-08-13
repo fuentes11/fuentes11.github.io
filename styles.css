@@ -1,0 +1,410 @@
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll; /* Agrega scroll vertical */
+}
+
+.slider-container {
+    position: relative;
+    width: 100vw;
+    height: calc(110vh - 4rem); /* Resta el espacio del mensaje overlay */
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slider {
+    display: flex;
+    width: 200%; /* Dos slides */
+    animation: slide 30s infinite linear;
+}
+
+.slide {
+    display: flex;
+    width: 100%; /* Un slide ocupa todo el ancho */
+}
+
+.slide img {
+    width: 33.33%; /* Ancho para tres imágenes en línea */
+    height: auto; /* Añadir esta línea para mantener la proporción */
+}
+
+.message-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1); /* Fondo semi-transparente */
+    color: white;
+    z-index: 1;
+    opacity: 0.7; /* Ajusta la opacidad según prefieras */
+}
+
+.message {
+    text-align: center; /* Centrar el texto horizontalmente */
+    position: relative;
+    top: -20px; /* Ajusta este valor para cambiar la posición vertical */
+}
+
+.message h2 {
+    font-size: 2rem;
+    padding: 10px 20px; /* Ajusta el padding para más espacio vertical */
+    border-radius: 10px;
+    margin: 10px 0; /* Ajusta el margen superior e inferior */
+}
+
+.message p {
+    font-size: 1.5rem;
+    margin: 5px 0; /* Agrega un margen pequeño */
+}
+h3.pink-border-heading {
+    border: 3px solid #ff66b2;
+    border-radius: 30px;
+    padding: 10px;
+    color: #ffff;
+    text-align: center;
+    width: 30%; /* Ancho del elemento */
+    margin: 20px auto 0; /* Margen superior, automático a los lados para centrar horizontalmente */
+}
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-50%); } /* Segundo grupo de imágenes */
+    50% { transform: translateX(0%); } /* Tercer grupo de imágenes */
+    75% { transform: translateX(-50%); } /* Vuelta al segundo grupo */
+}
+.additional-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.additional-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 20%;
+    border-top: 3px solid #ff66b2;
+    margin: 10px auto;
+}
+
+.additional-content .spinner {
+    width: 50px;
+    height: 50px;
+    background-color: #ff66b2;
+    border-radius: 50%;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(255, 102, 178, 0.7);
+}
+
+.additional-content .spinner-message {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* ... Rest of your existing styles ... */
+
+/* Fading animation for the new slider */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px;
+    }
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+* {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 30%; /* Ajusta el ancho según lo necesites */
+    margin: auto; /* Centra el carrusel */
+    padding-top: 20%; /* Establece la altura como un porcentaje del ancho para una relación de aspecto cuadrada */
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+}
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #f99;
+    counter-increment: item;
+  }
+  
+  .carousel__slide:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+ .carousel__navigation-button {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.2rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 37.5%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-color: #333;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  
+  .carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  .title-with-lines {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px; /* Ajusta el padding según sea necesario */
+}
+
+.title-with-lines::before,
+.title-with-lines::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #ff66b2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title-with-lines::before {
+    left: -80px; /* Ajusta la posición de la línea izquierda */
+}
+
+.title-with-lines::after {
+    right: -80px; /* Ajusta la posición de la línea derecha */
+}
