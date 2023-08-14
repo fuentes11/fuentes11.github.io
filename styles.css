@@ -1,3 +1,49 @@
+.tab-content .tab-pane {
+  display: none;
+  padding-top: 20px;
+
+}
+
+.tab-content .tab-pane.active {
+  display: block;
+}
+.custom-nav-tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+
+}
+
+.custom-nav-tabs .nav-item {
+  margin: 0 10px;
+}
+
+.custom-nav-tabs .nav-link.active h4 {
+  color: #ff66b2;
+  border-bottom: 2px solid #ff66b2;
+  font-size: 18px;
+  margin: 0;
+}
+.custom-container{
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+.custom-section {
+  width: 90%; /* Ancho máximo en porcentaje */
+  max-width: 800px; /* Ancho máximo absoluto */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 50px 0; /* Espacio vertical en la parte superior e inferior */
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+.custom-container img {
+  max-width: 50%; /* Hace que las imágenes sean responsivas */
+  height: auto;
+}
 @keyframes tonext {
     75% {
       left: 0;
@@ -424,14 +470,16 @@ h3.pink-border-heading {
 
 @media (max-width: 768px) {
   .carousel {
-    padding-top: 40%; /* Adjust padding for square aspect ratio */
+    width: 90%;
+    padding-top: 70%; /* Adjust padding for square aspect ratio */
   }
 
   .carousel__slide h3 {
-    font-size: 1.2vw; /* Increase font size for better readability */
+    font-size: 3vw; /* Increase font size for better readability */
   }
 
   .carousel__slide p {
-    font-size: 0.8vw; /* Increase font size for better readability */
+    font-size: 2vw; /* Increase font size for better readability */
   }
+ 
 }
