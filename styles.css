@@ -43,13 +43,13 @@
     }
   }
 
-body {
+  body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll; /* Agrega scroll vertical */
-}
+    overflow-y: scroll;
+  }
 
 .slider-container {
     position: relative;
@@ -71,8 +71,8 @@ body {
 }
 
 .slide img {
-    width: 33.33%; /* Ancho para tres imágenes en línea */
-    height: auto; /* Añadir esta línea para mantener la proporción */
+  width: 100%; /* Occupy full width */
+  height: auto;
 }
 
 .message-overlay {
@@ -123,9 +123,9 @@ h3.pink-border-heading {
     75% { transform: translateX(-50%); } /* Vuelta al segundo grupo */
 }
 .additional-content {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
 }
 
 .additional-content h2 {
@@ -181,12 +181,7 @@ h3.pink-border-heading {
     to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {
-        font-size: 11px;
-    }
-}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -200,6 +195,7 @@ h3.pink-border-heading {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    
 }
 .slideshow-container {
     max-width: 1000px;
@@ -237,12 +233,12 @@ h3.pink-border-heading {
   
   .carousel {
     position: relative;
-    width: 30%; /* Ajusta el ancho según lo necesites */
-    margin: auto; /* Centra el carrusel */
-    padding-top: 20%; /* Establece la altura como un porcentaje del ancho para una relación de aspecto cuadrada */
+    width: 30%;
+    margin: auto;
+    padding-top: 30%; /* Adjust padding for square aspect ratio */
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
-}
+  }
   
   .carousel__viewport {
     position: absolute;
@@ -277,6 +273,7 @@ h3.pink-border-heading {
     transform: translate3d(-50%,-40%,70px);
     color: #fff;
     font-size: 2em;
+    display: none;
   }
   
   .carousel__snapper {
@@ -329,7 +326,7 @@ h3.pink-border-heading {
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    background-color: #333;
+    background-color: #e76cb4;
     background-clip: content-box;
     border: 0.2rem solid transparent;
     border-radius: 50%;
@@ -361,12 +358,27 @@ h3.pink-border-heading {
   .carousel__next {
     right: -1rem;
   }
+  .carousel__slide h3 {
+    margin: 25px;
+    text-align: center;
+    font-size: 1.5vw; /* Responsive font size */
+    line-height: 1.2; /* Adjust line height for better readability */
+  }
   
+  .carousel__slide p {
+    margin: 2px; /* Adjust margin for better spacing */
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1vw; /* Responsive font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+  }
   .carousel::before,
   .carousel::after {
     content: '';
     z-index: 1;
-    background-color: #333;
+    background-color: #bd1c1c;
     background-size: 1.5rem 1.5rem;
     background-repeat: no-repeat;
     background-position: center center;
@@ -375,6 +387,7 @@ h3.pink-border-heading {
     line-height: 4rem;
     text-align: center;
     pointer-events: none;
+    display: none;
   }
   
   .carousel::before {
@@ -408,159 +421,17 @@ h3.pink-border-heading {
 .title-with-lines::after {
     right: -80px; /* Ajusta la posición de la línea derecha */
 }
-@media screen and (max-width: 768px) {
-  .slider-container {
-      height: calc(50vh - 4rem);
-  }
-  
-  .slider {
-      width: 400%;
-  }
-  
-  .slide img {
-      width: 50%;
-  }
-  
-  .message h2 {
-      font-size: 1.5rem;
-      padding: 5px 10px;
-  }
-  
-  .message p {
-      font-size: 1rem;
-      margin: 3px 0;
-  }
-  
-  .pink-border-heading {
-      width: 70%;
-      font-size: 1rem;
-  }
-  
-  .carousel {
-      width: 90%;
-      padding-top: 60%;
-  }
-  
-  .carousel__slide {
-      flex: 0 0 90%;
-  }
-  
-  .carousel__navigation-button {
-      width: 0.6rem;
-      height: 0.6rem;
-      border-width: 0.1rem;
-  }
-  
-  .additional-content h2 {
-      font-size: 1.2rem;
-  }
-  
-  .line {
-      width: 15%;
-  }
-}
 
-/* Responsive adjustments for screens up to 480px (phones) */
-@media screen and (max-width: 480px) {
-  .slider-container {
-      height: calc(40vh - 4rem);
-  }
-  
-  .slider {
-      width: 500%;
-  }
-  
-  .slide img {
-      width: 70%;
-  }
-  
-  .message h2 {
-      font-size: 1.2rem;
-      padding: 5px 10px;
-  }
-  
-  .message p {
-      font-size: 0.9rem;
-      margin: 3px 0;
-  }
-  
-  .pink-border-heading {
-      width: 80%;
-      font-size: 0.9rem;
-  }
-  
+@media (max-width: 768px) {
   .carousel {
-      width: 100%;
-      padding-top: 70%;
+    padding-top: 40%; /* Adjust padding for square aspect ratio */
   }
-  
-  .carousel__slide {
-      flex: 0 0 100%;
-  }
-  
-  .carousel__navigation-button {
-      width: 0.5rem;
-      height: 0.5rem;
-      border-width: 0.08rem;
-  }
-  
-  .additional-content h2 {
-      font-size: 1rem;
-  }
-  
-  .line {
-      width: 20%;
-  }
-}
 
-@media screen and (max-width: 1284px) {
-  .slider-container {
-      height: calc(70vh - 4rem);
+  .carousel__slide h3 {
+    font-size: 1.2vw; /* Increase font size for better readability */
   }
-  
-  .slider {
-      width: 300%;
-  }
-  
-  .slide img {
-      width: 60%;
-  }
-  
-  .message h2 {
-      font-size: 1.8rem;
-      padding: 8px 15px;
-  }
-  
-  .message p {
-      font-size: 1.2rem;
-      margin: 5px 0;
-  }
-  
-  .pink-border-heading {
-      width: 50%;
-      font-size: 1.2rem;
-  }
-  
-  .carousel {
-      width: 80%;
-      padding-top: 50%;
-  }
-  
-  .carousel__slide {
-      flex: 0 0 80%;
-  }
-  
-  .carousel__navigation-button {
-      width: 0.8rem;
-      height: 0.8rem;
-      border-width: 0.12rem;
-  }
-  
-  .additional-content h2 {
-      font-size: 1.4rem;
-  }
-  
-  .line {
-      width: 25%;
+
+  .carousel__slide p {
+    font-size: 0.8vw; /* Increase font size for better readability */
   }
 }
