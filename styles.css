@@ -74,7 +74,7 @@
   margin: 0 10px;
 }
 
-.custom-nav-tabs .nav-link.active h2 {
+.custom-nav-tabs .nav-link.active h4 {
   color: #ff66b2;
   border-bottom: 2px solid #ff66b2;
   font-size: 18px;
