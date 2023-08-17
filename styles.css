@@ -50,7 +50,6 @@
 .typing-animation {
   overflow: hidden;
   white-space: nowrap;
-  /* border-right: 3px solid black; */ /* Elimina esta línea para ocultar el cursor */
   animation: typing 4s steps(40) infinite, reset-typing 6s infinite; /* Animación de escritura y reinicio cada 6 segundos */
 }
 
@@ -75,7 +74,7 @@
   margin: 0 10px;
 }
 
-.custom-nav-tabs .nav-link.active h4 {
+.custom-nav-tabs .nav-link.active h2 {
   color: #ff66b2;
   border-bottom: 2px solid #ff66b2;
   font-size: 18px;
@@ -98,7 +97,7 @@
   background-color: #f99;
 }
 .custom-container img {
-  max-width: 50%; /* Hace que las imágenes sean responsivas */
+  max-width: 30%; /* Hace que las imágenes sean responsivas */
   height: auto;
 }
 @keyframes tonext {
