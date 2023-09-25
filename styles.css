@@ -536,7 +536,7 @@ h3.pink-border-heading {
 
 @media (max-width: 768px) {
   .carousel {
-    width: 90%;
+    width: 100%;
     padding-top: 70%; /* Adjust padding for square aspect ratio */
   }
 
@@ -547,6 +547,35 @@ h3.pink-border-heading {
   .carousel__slide p {
     font-size: 2vw; /* Increase font size for better readability */
   }
+  .slider-container {
+    position: relative;
+    width: 100vw;
+    height: calc(45vh - 4rem); /* Resta el espacio del mensaje overlay */
+    overflow: hidden;
+    background-color: #000;
+}
+.message {
+    text-align: center; /* Centrar el texto horizontalmente */
+    position: relative;
+    top: -20px; /* Ajusta este valor para cambiar la posición vertical */
+}
+
+.message h2 {
+    font-size: 2rem;
+    padding: 10px 20px; /* Ajusta el padding para más espacio vertical */
+    border-radius: 10px;
+    margin: 10px 0; /* Ajusta el margen superior e inferior */
+}
+
+.message p {
+  font-size: 1.2rem;
+  margin: 5px 0; /* Agrega un margen pequeño */
+}
+h3.pink-border-heading {
+
+  width: 45%; /* Ancho del elemento */
+  margin: 20px auto 0; /* Margen superior, automático a los lados para centrar horizontalmente */
+}
  
 }
 
