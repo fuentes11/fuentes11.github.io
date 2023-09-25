@@ -1,74 +1,8 @@
-body {
-    min-height : 100vh;
-    display    : flex;
-  }
-  
-  .slider {
-    max-width : var(--ancho);
-    height    : calc(var(--ancho) / (16 / 9) );
-    outline   : 2px solid hsla(0, 100%, 100%, 1);
-    position  : relative;
-    margin    : 0;
-    overflow  : hidden;
-    background-color: #000;
-  animation: 30s slidy infinite;
- 
-  }
-  .slider figure img { width: 9%; float: left; }
-
-.slider figure { 
-  position: relative;
-  width: 400%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-}
-
-img {
-    max-width : 100%; /* 24.84% en FF */
-    height    : auto;
-    opacity   : 1;
-    /* display   : table-cell; */  /* para FF */
-  }
-  .container {
-    max-width        : var(--ancho);
-    width            : 96%;
-    margin           : auto;
-    background-color : rgba(0,0,0,0.1);
-  }
-/*esta parte del código define el movimiento de las imágenes a la izquierda*/
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    
-}
-.message-overlay h2 {
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-.message-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    color: white;
-    z-index: 1; /* Place the overlay above the images */
-}
-.message-overlay h2 {
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
+<div class="sample-flipbook">
+		  <div class="hard"> <img src="https://binaries.templates.cdn.office.net/support/templates/es-es/lt45137469_quantized.png" alt="" /></div>
+		  <div class="hard"><img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-2.jpg" alt="" /></div>
+		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-3.jpg" alt="" />ola no se me gustas un vergo me gustas blancaaa</div>
+		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-4.jpg" alt="" /> </div>
+		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-5.jpg" alt="" /> </div>
+		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-6.jpg" alt="" /> </div>
+	  </div>
