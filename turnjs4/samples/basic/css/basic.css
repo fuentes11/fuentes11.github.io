@@ -2,9 +2,12 @@
 
 body{
 	overflow:hidden;
-	background-color:#fcfcfc;
 	margin:0;
 	padding:0;
+	/*background-image:url("../../../../images/fondoprincess.jpg");*/
+	background-image: url("https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .flipbook-viewport{
@@ -15,7 +18,7 @@ body{
 
 .flipbook-viewport .container{
 	position:absolute;
-	top:50%;
+	top:45%;
 	left:50%;
 	margin:auto;
 }
@@ -27,12 +30,12 @@ body{
 	top:-300px;
 }
 
-.flipbook-viewport .page{
-	width:461px;
-	height:600px;
-	background-color:white;
-	background-repeat:no-repeat;
-	background-size:100% 100%;
+.flipbook-viewport .page {
+    width: 100%; /* Haz que las páginas ocupen el ancho completo */
+    height: auto; /* Ajusta automáticamente la altura según el contenido */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Cambiamos "100% 100%" a "cover" para que se ajuste a la pantalla */
 }
 
 .flipbook .page{
@@ -65,3 +68,13 @@ body{
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
 }
+
+@media screen and (max-width: 600px) {
+	#burger {
+	  width: 10%;
+	  top: 1%;
+	}
+   /* Estilos generales para la vista de la libreta */
+   
+
+  }

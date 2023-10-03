@@ -1,8 +1,0 @@
-<div class="sample-flipbook">
-		  <div class="hard"> <img src="https://binaries.templates.cdn.office.net/support/templates/es-es/lt45137469_quantized.png" alt="" /></div>
-		  <div class="hard"><img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-2.jpg" alt="" /></div>
-		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-3.jpg" alt="" />ola no se me gustas un vergo me gustas blancaaa</div>
-		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-4.jpg" alt="" /> </div>
-		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-5.jpg" alt="" /> </div>
-		  <div> <img src="https://betteryou.com/health-matters/wp-content/uploads/2018/02/6pp_product-brochure_HR_Digital-6.jpg" alt="" /> </div>
-	  </div>
