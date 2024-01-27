@@ -471,7 +471,9 @@ header {
   header {
     padding: 20px;
   }
-
+  .content .button {
+    z-index: 1;
+  }
   .search {
     position: relative;
     width: 250px;
@@ -480,8 +482,18 @@ header {
 
   .banner {
     padding: 120px 30px 100px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
+  
+  .content .button {
+  position: relative;
+  margin: 10px; /* Ajusta según sea necesario */
+  height: auto; /* O ajusta según sea necesario */
+}
+.content .button a {
+  pointer-events: auto;
+}
+
 
   .banner .content {
     margin-top: 18%;
