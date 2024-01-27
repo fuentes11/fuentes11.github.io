@@ -14,6 +14,14 @@ body {
   overflow-x:hidden; 
   overflow-y:scroll; 
 }
+#page-contentt {
+  margin-top: 5%;
+  width: 100%; 
+  height: calc(100% - 20px); 
+  margin-bottom: 100px;
+  overflow-x:hidden; 
+  overflow-y:scroll; 
+}
 *,
 html {   box-sizing: border-box;
 
@@ -559,7 +567,9 @@ padding: 0;
     width: 100%;
     padding-top: 70%; /* Adjust padding for square aspect ratio */
   }
-
+  .pdfview {
+    height: 70vh; /* Adjust the height for smaller screens */
+  }
   .carousel__slide h3 {
     font-size: 3vw; /* Increase font size for better readability */
   }
@@ -722,7 +732,7 @@ ul {
 
 @media screen and (max-width: 600px) {
 #burger {
-  width: 10%;
+  width: 12%;
   top: 1%;
   
 }
@@ -733,18 +743,38 @@ ul {
   height: calc(55vh - 2rem); /* Resta el espacio del mensaje overlay */
   overflow: hidden;
   background-color: #000;
+  
 }
-}
-/*pdf view*/
 .pdfview {
-  /* Centrado */
-  padding-bottom: 40px;
   margin: auto;
   display: block;
   /* Tamaño */
   width: 90%;
-  height: 100%;
+  height: 85%; /* Use a percentage or viewport height for better responsiveness */
   /* Mejorar aspecto */
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#page-contentt {
+
+  width: 100%; 
+  height: 80%; 
+  margin-bottom: 100px;
+  overflow-x:hidden; 
+  overflow-y:scroll; 
+}
+}
+/*pdf view*/
+.pdfview {
+  padding-top: 40px;
+  margin: auto;
+  display: block;
+  /* Tamaño */
+  width: 90%;
+  height: 95%; /* Use a percentage or viewport height for better responsiveness */
+  /* Mejorar aspecto */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }

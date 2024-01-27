@@ -14,6 +14,8 @@ html {
   justify-content: center;
   height: 100vh;
   transition: 0.3s linear;
+  z-index: 1000; /* Set a higher z-index value */
+    /* ... other styles remain unchanged ... */
 }
 
 #overlay.active {
@@ -23,12 +25,12 @@ html {
 }
 
 #burger {
+  z-index: 1200; /* Set a higher z-index value for the burger icon */
   position: fixed;
   top: 20px; /* Cambia el valor de top a 20px para mantener la distancia desde la parte superior */
   left: 20px; /* Usa "left" en lugar de "right" para colocarlo en la parte izquierda */
   background: #17141d;
   padding: 1rem;
-  z-index: 1000;
   cursor: pointer;
   transition: 0.3s linear;
   box-shadow: 2px 2px 5px #17141d;
@@ -51,6 +53,8 @@ html {
 }
 
 #nav {
+  z-index: 1100; /* Set a higher z-index value */
+
   height: 100vh;
   width: 300px;
   display: flex;
