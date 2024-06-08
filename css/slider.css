@@ -57,7 +57,7 @@ h1{
 }
 #image-container{
     height: 100%;
-    width: 50vw;
+    width: 40vw;
     overflow: hidden;
     padding: 0px 30px;
     
@@ -73,7 +73,7 @@ h1{
     height: 100%;
     width: 100%;
     
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 25px;
     position: absolute;
     transition: 1s; 
@@ -89,3 +89,12 @@ button{
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    #image-container{
+        height: 100%;
+        width: 70vw;
+        overflow: hidden;
+        padding: 0px 30px;
+        
+    }
+}
