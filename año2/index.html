@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Feliz cumpleaños - Nombre</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/img/pastelicon.jpeg" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-storage.js"></script>
+    
+</head>
+
+<body>
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="" class="logo d-flex align-items-center">
+                <h1>ESTRELLITA<span>.</span></h1>
+            </a>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="#felicitaciones">Feliz Cumpleaños</a></li>
+                    <li><a href="#love2">Love</a></li>
+                    <li><a href="Felicitar.html">Felicitar</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <section id="hero" class="hero">
+
+        <div class="info d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2 data-aos="fade-down">Feliz Cumpleaños <span>Naho</span></h2>
+                        <p data-aos="fade-up">¡Feliz cumpleaños, Estrellita! Hoy celebramos los 19 años de la persona más hermosa, brillante y especial que el universo me ha regalado.
+                             Estoy agradecido por cada momento a tu lado y ansío seguir creando recuerdos juntos. Te amo infinitamente. 
+                        </p>
+                        <a data-aos="fade-up" data-aos-delay="200" href="#felicitaciones"
+                            class="btn-get-started">Felicidades</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+            <div class="carousel-item active"
+                style="background-image: url(assets/img/hero-carousel/inicio6.jpeg)">
+            </div>
+            <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/inicio.jpeg)">
+            </div>
+            <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/inicio3.jpeg)">
+            </div>
+            <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/inicio4.jpeg)">
+            </div>
+
+            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+        <main id="main">
+            <section id="felicitaciones" class="testimonials section-bg">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-header">
+                        <h2>Felicitaciónes</h2>
+                    </div>
+
+                    <div class="slides-2 swiper">
+                        <div class="swiper-wrapper" id="felicitaciones-container">
+
+                          
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="love2" class="features section-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Love</h2>
+                    </div>
+
+                    <ul class="nav nav-tabs row  g-2 d-flex">
+
+                        <li class="nav-item col-3">
+                            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                                <h4><b>Y</b>ou</h4>
+                            </a>
+                        </li>
+
+                        <li class="nav-item col-3">
+                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                                <h4><b>A</b>re</h4>
+                            </a>
+
+                        <li class="nav-item col-3">
+                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                                <h4><b>M</b>y</h4>
+                            </a>
+                        </li>
+
+                        <li class="nav-item col-3">
+                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                                <h4><b>L</b>ove</h4>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-1">
+                            <div class="row">
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                                    data-aos="fade-up" data-aos-delay="100">
+                                    <h3>Feliz Cumpleaños estrellitaaaa</h3>
+                                    <p>
+                                        Un día como hoy, hace 19 años, nació una estrellita que ilumina todo a su paso. 
+                                        Tu luz no solo ilumina tu camino, sino que también guía a quienes tienen la suerte de estar a tu lado.
+                                         En tu día especial, deseo que sigas brillando con la misma intensidad y que este nuevo año esté lleno de éxitos, aventuras y momentos inolvidables. 
+                                         ¡Feliz cumpleaños, mi estrellita! ✨
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                    data-aos-delay="200">
+                                    <img src="assets/img/love3.jpeg" alt="" class="img-fluid img-small">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tab-2">
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                    <h3>Me siento orgulloso</h3>
+                                    <p>
+                                        Me siento increíblemente orgulloso de cómo enfrentas los desafíos de la vida. 
+                                        Tienes una fortaleza y una determinación que admiro profundamente. 
+                                        Cada día te esfuerzas por ser una mejor versión de ti misma, enfrentando cada obstáculo con valentía y aprendiendo de cada experiencia. 
+                                        Pero lo que más me enorgullece es la nobleza que llevas en tu corazón. 
+                                        A pesar de todo, nunca pierdes tu compasión y tu capacidad de ver lo bueno en las personas. 
+                                        Eres un ejemplo de resiliencia y bondad, y me siento afortunado de poder caminar a tu lado en este viaje. Te amo🤍.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                    <img src="assets/img/love2.jpeg" alt="" class="img-fluid img-small">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tab-3">
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                    <h3>Gracias bonita</h3>
+                                    <p>
+                                        Quiero agradecerte por todo lo que haces y por ser quien eres. 
+                                        Tu presencia en mi vida es un regalo que valoro más de lo que las palabras pueden expresar. 
+                                        Gracias por cada risa, cada consejo, y por estar a mi lado en los buenos y malos momentos. 
+                                        Eres una bendición, y no puedo estar más agradecido por tenerte en mi vida.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                    <img src="assets/img/love1.jpeg" alt="" class="img-fluid img-small">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tab-4">
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                    <h3>Te amo</h3>
+                                    <p>
+                                        Eres mi personita favorita de todo el universo y significas más para mí de lo que las palabras pueden expresar y de lo que el ser humano puede comprender.
+                                         Me encantan tus Tus ojos tan lindos lleno de calidez y luz,
+                                         Me encantan tus pequeños gestos, la manera en que sonríes, y cómo logras iluminar incluso los días más oscuros. 
+                                         Cada parte de ti, desde tu risa hasta la forma en que ves la vida, me enamora más y más. 
+                                         Eres mi paz, mi alegría y mi razón de ser. 
+                                         Estoy agradecido cada día por tenerte a mi lado, y nunca dejaré de apreciar la magia que traes a mi vida.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                    <img src="assets/img/love4.jpeg" alt="" class="img-fluid img-small">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="footer-content position-relative">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-info">
+                                <h3>Nombre</h3>
+                                <strong>Telefono:</strong> Telefono<br>
+                                <strong>Email:</strong> peke3025@gmail.com<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+                            <h4>Links</h4>
+                            <ul>
+                                <li><a href="#" class="active">Inicio</a></li>
+                                <li><a href="#felicitaciones">Feliz Cumpleaños</a></li>
+                                <li><a href="#love2">Love</a></li>
+                                <li><a href="Felicitar.html">Felicitar</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal text-center position-relative">
+                <div class="container">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Naho</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a>Jason Fuentes</a> Distributed by <a>Goku</a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <div id="preloader"></div>
+
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/aos/aos.js"></script>
+        <script src="vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="vendor/php-email-form/validate.js"></script>
+
+        <script src="assets/js/main.js"></script>
+        <script type="module" src="script.js"></script>
+
+
+</body>
+
+</html>
