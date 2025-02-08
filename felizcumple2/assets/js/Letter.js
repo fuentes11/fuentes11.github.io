@@ -218,7 +218,7 @@ Te amo,
 
         function typeLetter() {
             if (index < loveLetter.length) {
-                letterElement.innerHTML += loveLetter[index];
+                letterElement.textContent += loveLetter[index];
                 index++;
 
                 // Reducir ligeramente el tamaño de la fuente si el texto es muy largo
@@ -227,7 +227,7 @@ Te amo,
                     letterElement.style.fontSize = `${Math.max(fontSize, 1)}rem`; // No baja de 1rem
                 }
 
-                setTimeout(typeLetter, 0); // Velocidad de escritura
+                setTimeout(typeLetter, 10); // Velocidad de escritura
             }
         }
 
