@@ -1,4 +1,4 @@
-body {
+html,body {
     margin: 0;
     padding: 0;
     background: radial-gradient(circle, #0d1b2a, #1b263b, #415a77);
