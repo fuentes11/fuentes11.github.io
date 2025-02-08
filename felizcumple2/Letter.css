@@ -33,31 +33,32 @@ html,body {
     z-index: -1; /* Mantener el fondo detrás del contenido */
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     width: 90%;
-    max-width: 800px;
+    max-width: 600px;
+    height: 80vh; /* Limitamos la altura para que no desborde */
+    overflow-y: auto; /* Activamos el scroll solo dentro del contenedor */
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
-    margin-bottom: 50px; /* Evita que el último contenido quede pegado al final */
+    position: relative;
 }
 
+/* Ajustamos el contenido de la carta */
 .letter {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
+    text-align: left;
     white-space: pre-wrap;
     word-wrap: break-word;
-    text-align: left;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
     .container {
+        height: 85vh; /* Un poco más grande en móviles */
         width: 95%;
         padding: 15px;
     }

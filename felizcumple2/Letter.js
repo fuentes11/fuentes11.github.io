@@ -166,7 +166,7 @@ Aquí hay 200 razones por las que te amo:
 161. Porque cuando te toco la cintura, siento que encajamos perfectamente.  
 162. Porque cuando usas shorts cortos, me dejas sin palabras.  
 163. Porque cuando caminas con seguridad, luces increíble.  
-164. Porque cuando te pones delineador en los ojos, tu mirada se vuelve hipnotizante.  
+164. Porque cuando te pones pestañol en los ojos, tu mirada se vuelve hipnotizante.  
 165. Porque cuando me abrazas fuerte, siento que nunca quiero soltarte.  
 166. Porque cuando duermes abrazada a mí, me siento el hombre más afortunado.  
 167. Porque cuando te ríes de mis chistes malos, me haces sentir especial.  
