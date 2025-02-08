@@ -1,14 +1,16 @@
 body {
     margin: 0;
+    padding: 0;
     background: radial-gradient(circle, #0d1b2a, #1b263b, #415a77);
     font-family: 'Dancing Script', cursive;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    overflow-y: auto; /* Habilitar scroll en toda la página */
+    align-items: center;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    width: 100%;
+    height: 100%;
     position: relative;
-    padding-top: 100px; /* Para evitar que el contenido quede oculto debajo del header */
+    overflow-x: hidden; /* Evita desplazamiento horizontal en móviles */
 }
 
 #header {
@@ -24,14 +26,13 @@ body {
 }
 
 .stars {
-    position: fixed;
+    position: fixed; /* Para que se mantenga en su lugar */
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100vw; /* Asegurar cobertura completa */
     height: 100vh;
-    z-index: -1;
+    z-index: -1; /* Mantener el fondo detrás del contenido */
 }
-
 .container {
     display: flex;
     flex-direction: column;
