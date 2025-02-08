@@ -227,7 +227,7 @@ Te amo,
                     letterElement.style.fontSize = `${Math.max(fontSize, 1)}rem`; // No baja de 1rem
                 }
 
-                setTimeout(typeLetter, 30); // Velocidad de escritura
+                setTimeout(typeLetter, 10); // Velocidad de escritura
             }
         }
 

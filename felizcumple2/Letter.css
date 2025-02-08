@@ -6,13 +6,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
-    width: 100%;
-    height: 100%;
+    min-height: 100vh; /* Para que el fondo cubra toda la pantalla */
+    width: 100vw; /* Forzar ancho completo */
+    height: 100vh; /* Asegurar que ocupe todo */
     position: relative;
-    overflow-x: hidden; /* Evita desplazamiento horizontal en móviles */
+    overflow-x: hidden; /* Evita desplazamiento lateral */
 }
-
 #header {
     position: fixed;
     top: 0;
@@ -62,7 +61,10 @@ body {
         width: 95%;
         padding: 15px;
     }
-
+    body {
+        min-height: 100vh;
+        height: auto;
+    }
     .letter {
         font-size: 1.2rem;
         line-height: 1.4;
